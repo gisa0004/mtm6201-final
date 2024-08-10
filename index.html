@@ -8,46 +8,68 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">  
+     
 </head>
 <body>
-
+<div class="p-3 mb-2 bg-primary text-white">
 <header>
     <div class="wrapper">
         <div class="container-fluids">
             <div class="navigation">
-                <img src="images/GK LOGO.png"> 
-                <nav>
-                    <ul>
-                        <li><a href='index.html'> Home</a></li>
-                        <li><a href='about.html'> About</a></li>
-                        <li><a href='contact.html'> Contact</a></li>
-                    </ul>
-                </nav>
+                <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><img src="images/GK LOGO.png" alt="Logo" width="60" height="54"  class="d-inline-block align-text-top"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <img src="images/CRAC-2.jpg" class="img-fluid" alt="ottawa sign" height="600">
             </div>
         </div>
     </div>
 </header>
-<main>
-    <div class="container text-center">
+<br>
+<main class="col-lg">
+    <div class="d-flex justify-content-between">
         <div class="row ">
-          <div class="col">
+          <div class="col-lg">
             <p>At GK Media, we envision a future where digital innovation and human creativity converge seamlessly. We’re committed to pioneering cutting-edge technologies and exploring new frontiers in digital marketing to empower our clients with unparalleled growth and success. Our focus is on driving transformative change, setting new industry standards, and building a digital landscape that’s more connected, engaging, and impactful for everyone.</p>
           </div>
-          <div class="col">
+          <div class="col-lg">
             <p>At GK Media, we envision a future where digital innovation and human creativity converge seamlessly. We’re committed to pioneering cutting-edge technologies and exploring new frontiers in digital marketing to empower our clients with unparalleled growth and success. Our focus is on driving transformative change, setting new industry standards, and building a digital landscape that’s more connected, engaging, and impactful for everyone.</p>
           </div>
-          <div class="col">
+          <div class="col-lg">
             <p>At GK Media, we craft innovative and tailored creative solutions that elevate your brand’s digital presence. Our blend of cutting-edge design, strategic thinking, and technological expertise ensures that your message not only stands out but also resonates with your audience, driving engagement and growth.</p>
           </div>
         </div>
-      </div>
+    </div>
 </main>
-<footer class="footer-banner">
+<footer>
     <div>
         <p>©copyright 2024</p>
     </div>
 </footer>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
